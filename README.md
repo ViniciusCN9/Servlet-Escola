@@ -2,7 +2,7 @@
 
 ## Instruções
 
-- Utilize o banco de dados MySql na versão 8.0.32 (Driver disponível na pasta dependencias, para outra versão utilize o driver compatível)
+- Utilize o banco de dados MySql na versão 8.0.32 (Driver disponível na pasta dependencias, para outra versão do MySql instale o driver compatível)
 
 - Execute os comandos SQL presentes no arquivo escola.sql
 
