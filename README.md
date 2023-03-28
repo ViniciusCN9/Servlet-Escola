@@ -2,11 +2,11 @@
 
 ## Instruções
 
-- Utilize o banco de dados MySql na versão 8.0.32
+- Utilize o banco de dados MySql na versão 8.0.32 (Driver disponível na pasta dependencias, para outra versão utilize o driver compatível)
 
 - Execute os comandos SQL presentes no arquivo escola.sql
 
-- Utilize o servidor apache-tomcat 9.0 e configure o Targeted Runtime para esse servidor
+- Utilize o servidor apache-tomcat 9.0 e configure o Targeted Runtime no Build Path para esse servidor
 
 - Adicione as dependências JAR da pasta deps na pasta webapp/WEB-INF/lib
 
