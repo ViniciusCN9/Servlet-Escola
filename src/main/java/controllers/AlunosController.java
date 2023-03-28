@@ -40,7 +40,7 @@ public class AlunosController extends HttpServlet {
 		
 		try {
 			String matricula = "";
-			Pattern routePattern = Pattern.compile("^/escola/alunos/([\\w-]+)$");
+			Pattern routePattern = Pattern.compile("^/Servlet-Escola/alunos/([\\w-]+)$");
 			Matcher matcher = routePattern.matcher(request.getRequestURI());
 			if (matcher.matches()) {
 				matricula = matcher.group(1);
@@ -74,7 +74,7 @@ public class AlunosController extends HttpServlet {
 		
 		try {
 			String nome = "";
-			Pattern routePattern = Pattern.compile("^/escola/alunos/([\\w-]+)$");
+			Pattern routePattern = Pattern.compile("^/Servlet-Escola/alunos/([\\w-]+)$");
 			Matcher matcher = routePattern.matcher(request.getRequestURI());
 			if (matcher.matches()) {
 				nome = matcher.group(1);
@@ -83,7 +83,7 @@ public class AlunosController extends HttpServlet {
 			if (nome != "") {
 				alunosDao.InsertAluno(nome);
 				response.setStatus(HttpServletResponse.SC_OK);
-				message = gson.toJson("Alunos inserido com sucesso!");
+				message = gson.toJson("Aluno inserido com sucesso!");
 			} else {
 				response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 				message = gson.toJson("Nome ausente!");
@@ -106,7 +106,7 @@ public class AlunosController extends HttpServlet {
 		try {
 			String matricula = "";
 			String nome = "";
-			Pattern routePattern = Pattern.compile("^/escola/alunos/([\\w-]+)/([\\w-]+)$");
+			Pattern routePattern = Pattern.compile("^/Servlet-Escola/alunos/([\\w-]+)/([\\w-]+)$");
 			Matcher matcher = routePattern.matcher(request.getRequestURI());
 			if (matcher.matches()) {
 				matricula = matcher.group(1);
@@ -138,7 +138,7 @@ public class AlunosController extends HttpServlet {
 		
 		try {
 			String matricula = "";
-			Pattern routePattern = Pattern.compile("^/escola/alunos/([\\w-]+)$");
+			Pattern routePattern = Pattern.compile("^/Servlet-Escola/alunos/([\\w-]+)$");
 			Matcher matcher = routePattern.matcher(request.getRequestURI());
 			if (matcher.matches()) {
 				matricula = matcher.group(1);
