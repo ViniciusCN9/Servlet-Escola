@@ -11,7 +11,7 @@
 
 - Adicione as dependências JAR da pasta deps na pasta webapp/WEB-INF/lib
 
-- Utilize o Insomnia ou o Postman para teste das rotas 
+- Utilize o Insomnia ou o Postman para testes das rotas 
 <https://insomnia.rest/download>
 
 ## Rotas
